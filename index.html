@@ -17,7 +17,7 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy for CodeJourney</h1>
-    <p class="muted">Last updated: March 7, 2026</p>
+    <p class="muted">Last updated: March 15, 2026</p>
 
     <div class="card">
       <p>
@@ -30,6 +30,8 @@
       <ul>
         <li><strong>Account information</strong> (if you sign in): email and basic profile data via Firebase Authentication / Google Sign-In.</li>
         <li><strong>App usage data</strong>: course progress, streak, XP, lesson completion, and in-app settings stored locally and/or through Firebase services.</li>
+        <li><strong>Purchase data</strong>: subscription/product identifiers, purchase status, and expiration date for PRO access (processed via Google Play Billing / in-app purchases).</li>
+        <li><strong>Notification preferences</strong>: whether update/reminder notifications are enabled, and related local settings.</li>
         <li><strong>Advertising data</strong>: AdMob may collect device identifiers and ad interaction data to deliver and measure ads.</li>
       </ul>
     </div>
@@ -39,6 +41,8 @@
       <ul>
         <li>To provide app functionality and save learning progress.</li>
         <li>To authenticate users and secure access.</li>
+        <li>To validate purchases/subscriptions and provide PRO features.</li>
+        <li>To send local app notifications about updates and learning reminders (if you allow notifications).</li>
         <li>To improve app performance and user experience.</li>
         <li>To show ads and reward-based ad features (if enabled).</li>
       </ul>
@@ -48,9 +52,11 @@
     <div class="card">
       <p>We use third-party services that may process data under their own privacy policies:</p>
       <ul>
-        <li>Firebase (Authentication, Core, and related services if enabled)</li>
+        <li>Firebase (Authentication, Firestore, and related services if enabled)</li>
         <li>Google Sign-In</li>
         <li>Google AdMob</li>
+        <li>Google Play Billing (in-app purchases/subscriptions)</li>
+        <li>Android notification services (for notifications permission and delivery)</li>
       </ul>
       <p>
         Please review Google’s Privacy Policy:
@@ -64,7 +70,8 @@
     <div class="card">
       <p>
         We do not sell your personal data. We may share limited data with service providers
-        (such as Google/Firebase/AdMob) only to operate app features, authentication, cloud sync, and ads.
+        (such as Google/Firebase/AdMob/Google Play Billing) only to operate app features,
+        authentication, cloud sync, purchases, notifications, and ads.
       </p>
     </div>
 
@@ -102,48 +109,47 @@
     <h2>9. Data Safety Summary (Google Play)</h2>
     <div class="card">
       <ul>
-        <li><strong>Data collected:</strong> account data (if sign-in), app progress, and advertising/device identifiers (via AdMob).</li>
-        <li><strong>Purpose:</strong> app functionality, authentication, progress sync, analytics/performance, and ads.</li>
-        <li><strong>Data sharing:</strong> limited sharing with Google services (Firebase, Google Sign-In, AdMob) to provide features.</li>
+        <li><strong>Data collected:</strong> account data (if sign-in), app progress, purchase/subscription status (for PRO), notification preferences, and advertising/device identifiers (via AdMob).</li>
+        <li><strong>Purpose:</strong> app functionality, authentication, progress sync, purchases/subscriptions, notifications, analytics/performance, and ads.</li>
+        <li><strong>Data sharing:</strong> limited sharing with Google services (Firebase, Google Sign-In, AdMob, Google Play Billing) to provide features.</li>
         <li><strong>Encryption/Security:</strong> reasonable protection measures are applied where supported by platform/services.</li>
       </ul>
     </div>
 
     <h2 id="account-deletion">10. Account and Data Deletion (CodeJourney)</h2>
-<div class="card">
-  <p><strong>Developer:</strong> Diary Iskenderov<br><strong>App:</strong> CodeJourney</p>
+    <div class="card">
+      <p><strong>Developer:</strong> Diary Iskenderov<br><strong>App:</strong> CodeJourney</p>
 
-  <p><strong>How to request deletion</strong></p>
-  <ol>
-    <li>In the app: Profile -> Settings -> Delete account (or Request account deletion).</li>
-    <li>By email:
-      <a href="mailto:diary.iskenderov@gmail.com?subject=Data%20Deletion%20Request">
-        diary.iskenderov@gmail.com
-      </a>
-      (subject: <code>Data Deletion Request</code>)
-    </li>
-  </ol>
+      <p><strong>How to request deletion</strong></p>
+      <ol>
+        <li>In the app: Profile -> Settings -> Delete account (or Request account deletion).</li>
+        <li>By email:
+          <a href="mailto:diary.iskenderov@gmail.com?subject=Data%20Deletion%20Request">
+            diary.iskenderov@gmail.com
+          </a>
+          (subject: <code>Data Deletion Request</code>)
+        </li>
+      </ol>
 
-  <p>Please include your account email (Google Sign-In email) and UID (if available).</p>
+      <p>Please include your account email (Google Sign-In email) and UID (if available).</p>
 
-  <p><strong>What we delete</strong><br>
-    Firebase Authentication account, user profile/progress data in <code>users/{uid}</code>,
-    and records linked to your UID (for example friend requests and feedback/reviews).
-  </p>
+      <p><strong>What we delete</strong><br>
+        Firebase Authentication account, user profile/progress data in <code>users/{uid}</code>,
+        and records linked to your UID (for example friend requests and feedback/reviews).
+      </p>
 
-  <p><strong>What may be retained</strong><br>
-    Minimal technical/legal records may be retained only when required by law or for fraud/security investigations.
-  </p>
+      <p><strong>What may be retained</strong><br>
+        Minimal technical/legal records may be retained only when required by law or for fraud/security investigations.
+      </p>
 
-  <p><strong>Processing time</strong><br>
-    Requests are processed within 30 days. Confirmation is sent by email.
-  </p>
+      <p><strong>Processing time</strong><br>
+        Requests are processed within 30 days. Confirmation is sent by email.
+      </p>
 
-  <p><strong>Guest mode</strong><br>
-    If you use the app without sign-in, no account is created, so account deletion is not required.
-  </p>
-</div>
-
+      <p><strong>Guest mode</strong><br>
+        If you use the app without sign-in, no account is created, so account deletion is not required.
+      </p>
+    </div>
 
     <h2>11. Changes to This Policy</h2>
     <div class="card">
